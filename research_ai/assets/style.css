@@ -1,0 +1,230 @@
+/* ==========================================================================
+   ResearchAI — Dark-Navy & Blue/Teal Accent Academic UI Theme
+   Colour-Coded Agent Cards:
+     1. Discovery  = Blue   (#3b82f6)
+     2. Literature = Green  (#10b981)
+     3. Experiment = Orange (#f59e0b)
+     4. Writing    = Purple (#8b5cf6)
+     5. Supervisor = Teal   (#14b8a6)
+   ========================================================================== */
+
+:root {
+  --bg-deep: #0a1124;
+  --bg-card: #111c38;
+  --bg-card-hover: #162447;
+  --border-subtle: rgba(148, 163, 184, 0.18);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --accent-teal: #14b8a6;
+  --accent-blue: #3b82f6;
+  --accent-green: #10b981;
+  --accent-orange: #f59e0b;
+  --accent-purple: #8b5cf6;
+}
+
+/* Main container refinement */
+.block-container {
+  padding-top: 1.5rem !important;
+  padding-bottom: 3rem !important;
+  max-width: 1380px !important;
+}
+
+/* Hero Header Banner */
+.rai-hero {
+  background: linear-gradient(135deg, #0d1b3a 0%, #0f2942 55%, #0d3b4c 100%);
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  border-radius: 16px;
+  padding: 1.65rem 2rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rai-hero-title {
+  font-size: 2.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.rai-hero-title span {
+  background: linear-gradient(90deg, #38bdf8, #14b8a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rai-hero-tagline {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin: 0.3rem 0 0.1rem 0;
+}
+
+.rai-hero-subtagline {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.rai-provider-badge {
+  background: rgba(15, 23, 42, 0.78);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  border-radius: 999px;
+  padding: 0.48rem 1.05rem;
+  font-size: 0.84rem;
+  color: #e2e8f0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.rai-dot-live {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  display: inline-block;
+}
+
+/* 6-Step Progress Stepper */
+.rai-stepper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.55rem;
+  margin-bottom: 1.35rem;
+}
+
+.rai-step {
+  background: #111c38;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 10px;
+  padding: 0.6rem 0.75rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.rai-step.done {
+  border-color: rgba(16, 185, 129, 0.65);
+  background: rgba(16, 185, 129, 0.12);
+  color: #d1fae5;
+}
+
+.rai-step.active {
+  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.16);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.25);
+}
+
+/* Colour-Coded Agent Cards */
+.rai-agent-card {
+  background: #111c38;
+  border-radius: 14px;
+  padding: 1.3rem 1.4rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-top-width: 4px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.24);
+  height: 100%;
+}
+
+.rai-card-discovery {
+  border-top-color: #3b82f6;
+}
+.rai-card-literature {
+  border-top-color: #10b981;
+}
+.rai-card-experiment {
+  border-top-color: #f59e0b;
+}
+.rai-card-writing {
+  border-top-color: #8b5cf6;
+}
+.rai-card-supervisor {
+  border-top-color: #14b8a6;
+}
+
+.rai-agent-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.18rem;
+  color: #f8fafc;
+}
+
+.rai-agent-tagline {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+}
+
+.rai-agent-card ul {
+  padding-left: 1.15rem;
+  margin-bottom: 0.85rem;
+  color: #cbd5e1;
+  font-size: 0.88rem;
+}
+
+.rai-sample-output {
+  background: rgba(15, 23, 42, 0.65);
+  border-left: 3px solid #14b8a6;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  color: #e2e8f0;
+}
+
+/* Academic Responsibility Disclaimer Box */
+.rai-disclaimer {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  border-radius: 10px;
+  padding: 0.75rem 1.1rem;
+  font-size: 0.84rem;
+  color: #fde68a;
+  margin-bottom: 1.1rem;
+}
+
+/* Info / Feature Grid Cards */
+.rai-info-box {
+  background: #111c38;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  height: 100%;
+}
+
+/* Footer Banner */
+.rai-footer {
+  margin-top: 2.5rem;
+  padding: 1.35rem 1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.rai-footer-motto {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 900px) {
+  .rai-stepper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

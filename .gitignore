@@ -15,9 +15,23 @@ dist/
 node_modules/
 .wrangler
 
+# Python & Streamlit virtual environments and secrets
+.venv/
+research_ai/.venv/
+venv/
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
+!.streamlit/secrets.toml.example
+research_ai/.streamlit/secrets.toml
+!research_ai/.streamlit/secrets.toml.example
+
 # env
 .env
-.env.production
+.env.*
+!.env.example
+research_ai/.env
+!research_ai/.env.example
 .dev.vars
 
 # logs
